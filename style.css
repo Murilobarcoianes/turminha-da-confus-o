@@ -61,3 +61,18 @@
     box-shadow: 0 14px 40px rgba(var(--shadow-rgba), 0.12);
 }
 
+.loading{
+    animation: Load 1s ease;
+}
+
+@keyframes Load {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
