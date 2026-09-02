@@ -1,23 +1,63 @@
-.Body{
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(240, 237, 234);
+.root,
+:root {
+    --bg: #f6f8f9;
+    --card: #ffffff;
+    --primary: #0ea5a4;
+    --accent: #f97316;
+    --text: #0f172a;
+    --muted: #6b7280;
+    --shadow-rgba: 16,24,32;
 }
 
-.perso{
+.Body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 50%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
     margin-top: 20px;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--card);
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    gap: 20px;
-    position: fixed;
-    top: 25%;
-    transition: all 0.6s ease;
+    box-shadow: 0 8px 24px rgba(var(--shadow-rgba), 0.08);
+    padding: 16px;
+    gap: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(var(--shadow-rgba), 0.12);
+}
+
