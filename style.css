@@ -44,6 +44,14 @@
     font-weight: 600;
 }
 
+.search-container button:hover {
+    background-color: var(--accent);
+}
+
+.search-container button:active {
+    animation: searchbutton 0.2s ease;
+}
+
 .cards{
     display: flex;
     flex-direction: row;
@@ -114,6 +122,18 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes searchbutton {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
     }
     
 }
