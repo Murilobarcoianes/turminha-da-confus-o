@@ -42,6 +42,7 @@
     color: white;
     cursor: pointer;
     font-weight: 600;
+    transition: background-color 0.2s ease;
 }
 
 .search-container button:hover {
@@ -49,7 +50,7 @@
 }
 
 .search-container button:active {
-    animation: searchbutton 0.2s ease;
+    animation: searchbutton 0.2s ease-in-out;
 }
 
 .cards{
