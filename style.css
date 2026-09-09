@@ -17,6 +17,31 @@
     color: var(--text);
 }
 
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    width: min(500px, 90px);
+}
+
+.search-container input {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.search-container button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
 .cards{
     display: flex;
     flex-direction: row;
@@ -59,6 +84,12 @@
 .card:hover{
     transform: translateY(-6px);
     box-shadow: 0 14px 40px rgba(var(--shadow-rgba), 0.12);
+}
+
+.no-results {
+    margin-top: 30px;
+    color: var(--muted);
+    font-size: 1rem;
 }
 
 .loading{
