@@ -2,7 +2,9 @@ const cards = [
     ["Felps", "Descrição do personagem 1.", "path/to/image.jpg"],
     ["Ray", "Descrição do personagem 2.", "path/to/image.jpg"],
     ["Tharcis", "Descrição do personagem 3.", "path/to/image.jpg"],
-    ["Clarinha", "Descrição do personagem 4.", "path/to/image.jpg"]
+    ["Clarinha", "Descrição do personagem 4.", "path/to/image.jpg"],
+    ["Felipe", "Descrição do personagem 5.", "path/to/image.jpg"],
+    ["Arthur", "Descrição do personagem 6.", "path/to/image.jpg"]
 ];
 
 function renderCards(items) {
