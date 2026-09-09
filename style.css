@@ -92,6 +92,14 @@
     font-size: 1rem;
 }
 
+.header {
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
 .loading{
     animation: Load 1s ease;
 }
