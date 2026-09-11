@@ -72,7 +72,7 @@ function renderCards(items) {
     }
 
     container.innerHTML = items.map(([name, description, img]) => `
-        <div class="card">
+        <div class="card" onclick= "window.location.href='${name}.html'">
             <div class="card-content">
                 ${img ? `<img src="${img}" alt="${name}">` : ''}
                 <h2>${name}</h2>
