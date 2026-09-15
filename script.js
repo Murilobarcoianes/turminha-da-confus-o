@@ -67,7 +67,7 @@ function renderCards(items) {
     if (!container) return;
 
     if (!items.length) {
-        container.innerHTML = '<p class="no-results">Nenhum Resultado encontrado.</p>';
+        container.innerHTML = '<p class="no-results">Não Têm nimguém além de você.</p>';
         return;
     }
 
