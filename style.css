@@ -1,9 +1,9 @@
 .root,
 :root {
-    --bg: #f6f8f9;
+    --bg: #b6d8e9;
     --card: #ffffff;
-    --primary: #0ea5a4;
-    --accent: #f97316;
+    --primary: #0e6ba5;
+    --accent: #16adf9;
     --text: #0f172a;
     --muted: #6b7280;
     --shadow-rgba: 16,24,32;
@@ -66,9 +66,10 @@
 .card{
     display: flex;
     flex-direction: column;
-    width: 260px;
+    width: 180px;
     margin-top: 20px;
     align-items: center;
+    text-align: center;
     background-color: var(--card);
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(var(--shadow-rgba), 0.08);
@@ -112,7 +113,7 @@
 }
 
 .loading{
-    animation: Load 1s ease;
+    animation: Load 1.25s ease;
 }
 
 @keyframes Load {
