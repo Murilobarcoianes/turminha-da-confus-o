@@ -6,23 +6,40 @@
   --accent: #D1C4E9;
   --text: #0f172a;
 }
-html,body {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--text);
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
 }
+
 body {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:2rem;
+    display: flex;
+    justify-content: left;
+    padding: 2rem;
 }
+
 h1 {
-  background: linear-gradient(90deg,var(--primary),var(--accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 3rem;
-  margin: 0;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    margin: 0;
 }
+
+.card {
+    background: var(--card);
+    color: var(--text);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(var(--shadow-rgba), 0.12);
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: var(--muted);
+    width: 70%;
+}
+
