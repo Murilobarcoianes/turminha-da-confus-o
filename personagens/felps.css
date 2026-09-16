@@ -19,8 +19,7 @@ html, body {
 
 body {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 2rem;
 }
 
@@ -38,4 +37,10 @@ h1 {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 8px 24px rgba(var(--shadow-rgba), 0.12);
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: var(--muted);
+    width: 70%;
 }
