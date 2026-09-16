@@ -1,0 +1,28 @@
+﻿/* Auto-generated stylesheet for Rapark */
+:root {
+  --bg: #CE93D8;
+  --card: #ffffff;
+  --primary: #FFCDD2;
+  --accent: #E1BEE7;
+  --text: #0f172a;
+}
+html,body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+body {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+h1 {
+  background: linear-gradient(90deg,var(--primary),var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  margin: 0;
+}
