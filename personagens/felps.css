@@ -1,0 +1,41 @@
+.root,
+:root {
+    --bg: #f6f8f9;
+    --card: #ffffff;
+    --primary: #11a50e;
+    --accent: #16f916;
+    --text: #0f172a;
+    --muted: #6b7280;
+    --shadow-rgba: 16,24,32;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+h1 {
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.card {
+    background: var(--card);
+    color: var(--text);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(var(--shadow-rgba), 0.12);
+}
